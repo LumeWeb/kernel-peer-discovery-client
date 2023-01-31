@@ -6,6 +6,9 @@ export class PeerDiscoveryClient extends Client {
         const ret = await bag.callModule("register");
         this.handleError(ret);
     }
+    async registerSelf() {
+        return await this.callModuleReturn("register");
+    }
     async remove(name) {
         return await this.callModuleReturn("remove", { name });
     }
