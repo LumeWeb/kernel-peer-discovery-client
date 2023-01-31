@@ -18,6 +18,7 @@
         "@hyperswarm/dht-relay": "^0.3.0",
         "@lumeweb/libkernel-universal": "git+https://git.lumeweb.com/LumeWeb/libkernel-universal.git",
         "@lumeweb/peer-discovery": "git+https://git.lumeweb.com/LumeWeb/peer-discovery.git",
+        "@siaweb/libweb": "git+https://git.lumeweb.com/LumeWeb/libsiaweb.git",
         "hyperswarm": "^4.3.7",
         "libkernel": "^0.1.48",
         "libkmodule": "^0.2.53"
