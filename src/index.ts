@@ -8,6 +8,10 @@ export class PeerDiscoveryClient extends Client {
     this.handleError(ret);
   }
 
+  public async registerSelf(): Promise<void> {
+    return await this.callModuleReturn("register");
+  }
+
   public async remove(name: string): Promise<boolean> {
     return await this.callModuleReturn("remove", { name });
   }
