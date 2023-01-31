@@ -38,7 +38,7 @@ export class PeerDiscoveryClient extends Client {
 
 export const createClient = factory<PeerDiscoveryClient>(
   PeerDiscoveryClient,
-  "FACTQhR-sNQ0K9Nh5QlHlkp5q57rxBdc2DGgacoTdwtIoA"
+  "FADtZWz_dUhGRgLcaJGIdTgYPg4k60F8wvKgby_v08jo3A"
 );
 
 export { Peer };
