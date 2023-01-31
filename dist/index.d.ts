@@ -5,7 +5,7 @@ export declare class PeerDiscoveryClient extends Client {
     remove(name: string): Promise<boolean>;
     removeAll(): Promise<void>;
     exists(name: string): Promise<boolean>;
-    discover(pubkey: string): Promise<Peer | boolean>;
+    discover(pubkey: string | Uint8Array): Promise<Peer | boolean>;
 }
 export declare const createClient: (...args: any) => PeerDiscoveryClient;
 export { Peer };
