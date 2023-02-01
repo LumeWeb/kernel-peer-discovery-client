@@ -17,7 +17,7 @@ specifiers:
 
 dependencies:
   '@hyperswarm/dht-relay': 0.3.0
-  '@lumeweb/libkernel-universal': git.lumeweb.com/LumeWeb/libkernel-universal/fb377db59fd24761d140eb98f49166ea1cc7cc39
+  '@lumeweb/libkernel-universal': git.lumeweb.com/LumeWeb/libkernel-universal/abb26748abb3ca76d4489bf87a1c10a9901367ab
   '@lumeweb/peer-discovery': git.lumeweb.com/LumeWeb/peer-discovery/d2bd926275103d60fdd3c7c432eae5c278f49261
   '@siaweb/libweb': git.lumeweb.com/LumeWeb/libsiaweb/5e6cdba3e7d9a4b94e21ddcd5f2b5138fb440ee8
   hyperswarm: 4.3.7
@@ -400,6 +400,10 @@ packages:
       esbuild-windows-arm64: 0.14.54
     dev: true
 
+  /eventemitter2/6.4.9:
+    resolution: {integrity: sha512-JEPTiaOt9f04oa6NOkc4aH+nVp5I3wEjpHbIPqfgCdD5v5bUzy7xQqwcVO2aDQgOWhI28da57HksMrzK9HlRxg==}
+    dev: false
+
   /events/3.3.0:
     resolution: {integrity: sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==}
     engines: {node: '>=0.8.x'}
@@ -749,12 +753,13 @@ packages:
     resolution: {integrity: sha512-FIr/DEeoHfj7ftfylnoFt3rAIRoWXpx2AoDfrT2qD2wtp7Dp+COajvs/Icb7uHqRW9m60f5iXZwdsJJO3kvb7w==}
     dev: false
 
-  git.lumeweb.com/LumeWeb/libkernel-universal/fb377db59fd24761d140eb98f49166ea1cc7cc39:
-    resolution: {commit: fb377db59fd24761d140eb98f49166ea1cc7cc39, repo: https://git.lumeweb.com/LumeWeb/libkernel-universal.git, type: git}
+  git.lumeweb.com/LumeWeb/libkernel-universal/abb26748abb3ca76d4489bf87a1c10a9901367ab:
+    resolution: {commit: abb26748abb3ca76d4489bf87a1c10a9901367ab, repo: https://git.lumeweb.com/LumeWeb/libkernel-universal.git, type: git}
     name: '@lumeweb/libkernel-universal'
     version: 0.1.0
     dependencies:
       '@siaweb/libweb': git.lumeweb.com/LumeWeb/libsiaweb/5e6cdba3e7d9a4b94e21ddcd5f2b5138fb440ee8
+      eventemitter2: 6.4.9
       libkernel: 0.1.48
       libkmodule: 0.2.53
     dev: false
