@@ -29,4 +29,4 @@ export class PeerDiscoveryClient extends Client {
         return await this.callModuleReturn("discover", { pubkey });
     }
 }
-export const createClient = factory(PeerDiscoveryClient, "FACTQhR-sNQ0K9Nh5QlHlkp5q57rxBdc2DGgacoTdwtIoA");
+export const createClient = factory(PeerDiscoveryClient, "FAC1RHsjGT8DcmOvnBVd8CekuuzE_qpMCRJ4oT_7Tql8bg");
