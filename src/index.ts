@@ -1,9 +1,12 @@
-import { Client, factory } from "@lumeweb/libkernel-universal";
-import type { Peer } from "@lumeweb/peer-discovery";
-import { hexToBuf } from "@siaweb/libweb/dist";
+import { Client, factory } from "@lumeweb/libkernel/module";
+import type { Peer } from "@lumeweb/libpeerdiscovery";
+import { hexToBuf } from "@lumeweb/libweb";
+
+const MODULE = "zduLdc2dNGHDzDr5bS5e3r16zunKuDR6Bhgv4y63caV4D73dnGE8ByDvMd";
+
 export class PeerDiscoveryClient extends Client {
   public async register(source: string): Promise<void> {
-    const bag = await this.loadBound(source);
+    const bag = this.getBound(source);
     const ret = await bag.callModule("register");
     this.handleError(ret);
   }
@@ -23,6 +26,7 @@ export class PeerDiscoveryClient extends Client {
   public async exists(name: string): Promise<boolean> {
     return await this.callModuleReturn("remove", { name });
   }
+
   public async discover(pubkey: string | Uint8Array): Promise<Peer | boolean> {
     if (typeof pubkey === "string") {
       let buf = hexToBuf(pubkey);
@@ -38,7 +42,7 @@ export class PeerDiscoveryClient extends Client {
 
 export const createClient = factory<PeerDiscoveryClient>(
   PeerDiscoveryClient,
-  "FAC1RHsjGT8DcmOvnBVd8CekuuzE_qpMCRJ4oT_7Tql8bg"
+  MODULE,
 );
 
 export { Peer };
