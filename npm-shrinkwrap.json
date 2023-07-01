@@ -14,7 +14,7 @@
                 "hyperswarm": "^4.3.7"
             },
             "devDependencies": {
-                "@lumeweb/node-library-preset": "^0.2.6",
+                "@lumeweb/node-library-preset": "^0.2.7",
                 "@types/random-number-csprng": "^1.0.0",
                 "@types/ws": "^8.5.4",
                 "presetter": "*",
