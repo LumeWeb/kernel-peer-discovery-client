@@ -9,7 +9,8 @@
     },
     "scripts": {
         "prepare": "presetter bootstrap",
-        "build": "run build"
+        "build": "run build",
+        "semantic-release": "semantic-release"
     },
     "devDependencies": {
         "@lumeweb/node-library-preset": "^0.2.6",
