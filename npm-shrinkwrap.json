@@ -9,7 +9,7 @@
             "version": "0.0.2-develop.1",
             "dependencies": {
                 "@hyperswarm/dht-relay": "^0.3.0",
-                "@lumeweb/libkernel": "0.1.0-develop.6",
+                "@lumeweb/libkernel": "0.1.0-develop.7",
                 "@lumeweb/libpeerdiscovery": "^0.1.0-develop.1",
                 "hyperswarm": "^4.3.7"
             },
@@ -1794,9 +1794,9 @@
             }
         },
         "node_modules/@lumeweb/libkernel": {
-            "version": "0.1.0-develop.6",
-            "resolved": "https://registry.npmjs.org/@lumeweb/libkernel/-/libkernel-0.1.0-develop.6.tgz",
-            "integrity": "sha512-9zd6zX96yLQ4xEmoqWpcUzVwODOG7qGU4IRyxsQZkVZXdq1asfzOeSspbM3TfrfyyVLyjAcQjOrt5delnH45Xg==",
+            "version": "0.1.0-develop.7",
+            "resolved": "https://registry.npmjs.org/@lumeweb/libkernel/-/libkernel-0.1.0-develop.7.tgz",
+            "integrity": "sha512-X2x9KYpvpMIWhURiPpEQUYOXPh96UGlwuFTny2NutbaUZr14qSQTBCB9C3rTngqVQVYrSW+q4rtAlf1GZ8eGeA==",
             "dependencies": {
                 "@lumeweb/libweb": "0.2.0-develop.20",
                 "eventemitter2": "^6.4.9"
