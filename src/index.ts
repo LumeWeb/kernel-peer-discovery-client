@@ -2,7 +2,7 @@ import { Client, factory } from "@lumeweb/libkernel/module";
 import type { Peer } from "@lumeweb/libpeerdiscovery";
 import { hexToBuf } from "@lumeweb/libweb";
 
-const MODULE = "zduHR9bx43UsjTQomS9K2AzvjRVuh3YjqaMvS32FUKVYx3sCoBsibakc8w";
+const MODULE = "zduQZvN3rpSKUBDfhQLjTRP22dfAL6YXYxrPNLhw1jCDEMGnxDWtzocLvT";
 
 export class PeerDiscoveryClient extends Client {
   public async register(source: string): Promise<void> {
