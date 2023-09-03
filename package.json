@@ -23,7 +23,7 @@
     },
     "dependencies": {
         "@hyperswarm/dht-relay": "^0.3.0",
-        "@lumeweb/libkernel": "0.1.0-develop.38",
+        "@lumeweb/libkernel": "0.1.0-develop.39",
         "@lumeweb/libpeerdiscovery": "^0.1.0-develop.2",
         "hyperswarm": "^4.3.7"
     },
