@@ -1,6 +1,6 @@
 import { Client, factory } from "@lumeweb/libkernel/module";
 import type { Peer } from "@lumeweb/libpeerdiscovery";
-import { hexToBuf } from "@lumeweb/libweb";
+import { hexToBytes } from "@lumeweb/libweb";
 
 const MODULE = "zdiLW9MtAAMssP5vLBgd1FitouiVXzNUYZszFYG44uVKqCPDqUQox9aq1y";
 
@@ -29,13 +29,9 @@ export class PeerDiscoveryClient extends Client {
 
   public async discover(pubkey: string | Uint8Array): Promise<Peer | boolean> {
     if (typeof pubkey === "string") {
-      let buf = hexToBuf(pubkey);
-      if (buf[1]) {
-        throw new Error(buf[1]);
-      }
-
-      pubkey = buf[0];
+      pubkey = hexToBytes(pubkey);
     }
+
     return await this.callModuleReturn("discover", { pubkey });
   }
 }
